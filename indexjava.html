@@ -9,20 +9,29 @@
 <body>
 
 <header>
-    <h1>Blood Donation System</h1>
+    <h1 class="head">Blood Donation System</h1>
 </header>
 
 <section class="container">
     <div class="form-container">
-        <h2>Donate Blood</h2>
+        <h2 id="head">Donate Blood</h2>
+        <div class="form2-container">
         <form id="donationForm">
-            <label for="name">Full Name:</label>
+            <fieldset >
+            <div class="name">
+            <label for="name" class="label">Full Name:</label>
             <input type="text" id="name" name="name" required>
-
-            <label for="email">Email:</label>
+        </div>
+            <div class="name">
+            <label for="email" class="label">Email:</label>
             <input type="email" id="email" name="email" required>
-
-            <label for="bloodGroup">Blood Group:</label>
+        </div>
+        <div class="name">
+            <label for="mobile" class="label">MobileNo:</label>
+            <input type="mobileno" id="mobile" name="mobile" required>
+        </div>
+            <div class="name">
+            <label for="bloodGroup" class="label">Blood Group:</label>
             <select id="bloodGroup" name="bloodGroup" required>
                 <option value="" disabled selected>Select your blood group</option>
                 <option value="A+">A+</option>
@@ -34,13 +43,18 @@
                 <option value="AB+">AB+</option>
                 <option value="AB-">AB-</option>
             </select>
-
-            <button type="button" onclick="submitForm()">Submit</button>
+        </div>
+        </div>
+        <div class="btn1">
+            <button type="button" onclick="submitForm()" class="btn" >Submit</button>
+        </div>
+        </fieldset>
         </form>
+    </div>
     </div>
 </section>
 
-<footer>
+<footer class="head">
     <p>&copy; 2024 Blood Donation System</p>
 </footer>
 
